@@ -1,0 +1,19 @@
+{
+  "name": "noemiemallet_3_23092021",
+  "version": "1.0.0",
+  "description": "Site Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/styles.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noemie-ma/NoemieMallet_3_23092021.git"
+  },
+  "author": "Noémie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noemie-ma/NoemieMallet_3_23092021/issues"
+  },
+  "homepage": "https://github.com/noemie-ma/NoemieMallet_3_23092021#readme"
+}
