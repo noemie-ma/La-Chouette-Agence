@@ -1,9 +1,126 @@
 <!DOCTYPE html>
 <html lang="FR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="/public/css/styles.css" />
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/38c16595fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <title>Ohmyfood</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <p>Ohmyfood</p>
+        </div>
+    </header>
+
+    <!-- County and searching for restaurants -->
+    <div id="search">
+        <div class="gps-loc">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="imput-search">
+            <input aria-label="Search through site content" class="input-search" id="site-search"
+                    placeholder="Paris, Belleville" type="search" />
+        </div>
+        <div class="description">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        </div>
+        <div class="button-explore">
+            <a href="#">
+                <button type="submit" class="rechercher">Explorer nos restaurants</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- How to use the website -->
+    <article id="tuto">
+        <h1>Fonctionnement</h1>
+        <ol>
+            <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
+            <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
+            <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
+        </ol>
+    </article>
+
+    <!-- Sets of menus -->
+    <aside id="restaurants">
+        <h1>Restaurants</h1>
+        <div class="elements">
+            <a class="redirection" href="palette_menu.html">
+                <div class="menus_elements">
+                    <div class="imgmenu">
+                        <img class="suggesting" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Filet de boeuf aux herbes dans une assiette" />
+                    </div>
+                    <div class="pres-menu">
+                        <h2>La palette du goût</h2>
+                        <p>Ménilmontant</p> 
+                    </div>
+                    <div class="like">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a class="redirection" href="palette_menu.html">
+                <div class="menus_elements">
+                    <div class="imgmenu">
+                        <img class="suggesting" src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Mijoté de queue de boeuf dans une assiette" />
+                    </div>
+                    <div class="pres-menu">
+                        <h2>La note enchantée</h2>
+                        <p>Charonne</p> 
+                    </div>
+                    <div class="like">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a class="redirection" href="palette_menu.html">
+                <div class="menus_elements">
+                    <div class="imgmenu">
+                        <img class="suggesting" src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Pigeonneau d'Ile-Et-Vilaine dans une assiette" />
+                    </div>
+                    <div class="pres-menu">
+                        <h2>A la française</h2>
+                        <p>Cité Rouge</p> 
+                    </div>
+                    <div class="like">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a class="redirection" href="palette_menu.html">
+                <div class="menus_elements">
+                    <div class="imgmenu">
+                        <img class="suggesting" src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Langouste rôtie dans un plat" />
+                    </div>
+                    <div class="pres-menu">
+                        <h2>Le délice des sens</h2>
+                        <p>Folie-Méricourt</p> 
+                    </div>
+                    <div class="like">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </aside>
+
+    <footer>
+        <h1>Ohmyfood</h1>
+        <ul>
+            <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+            <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+            <li>Mentions légales</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
+</body>
 </html>
