@@ -1,15 +1,16 @@
 header
 {
     display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-content: center;
     width: 100%;
-}
 
-#logo
-{
-    h1{
-        font-family: $shrikhand;
-        font-weight: bold;
+    img
+    {
+        width: 70%;
     }
 }
+
 
 
