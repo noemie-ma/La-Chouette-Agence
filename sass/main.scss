@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import "./Base/reset";
-@import "./Base/typography";
-@import "./Components/buttons";
-@import "./Layout/container";
-@import "./Layout/footer";
-@import "./Layout/form";
-@import "./Layout/header";
-@import "./Layout/nav";
-@import "./Pages/francemenu";
-@import "./Pages/notemenu";
-@import "./Pages/palettemenu";
-@import "./Pages/sensmenu";
-@import "./Utils/functions";
-@import "./Utils/mixins";
-@import "./Utils/variables";
+@import "./Base/reset.scss";
+@import "./Utils/variables.scss";
+@import "./Utils/mixins.scss";
+@import "./Utils/functions.scss";
+@import "./Base/typography.scss";
+@import "./Layout/header.scss";
+@import "./Layout/form.scss";
+@import "./Components/buttons.scss";
+@import "./Pages/francemenu.scss";
+@import "./Pages/notemenu.scss";
+@import "./Pages/palettemenu.scss";
+@import "./Pages/sensmenu.scss";
+@import "./Layout/footer.scss";
+
+
