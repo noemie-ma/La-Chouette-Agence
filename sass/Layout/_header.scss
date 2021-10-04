@@ -1,27 +1,33 @@
+body
+{
+    margin: 0;
+}
+
 header
 {
     display: flex;
-
+    width: 100%;
     #logo
     {
         background-color: $colour-quaternary;
-        box-shadow: 0px 3px 4px #cecece;
-        position: relative;
+        box-shadow: 0px 3px 4px $colour-shadow;
         width: 100%;
-        justify-content: center;
+        @include flex-row;
+        justify-content: space-around;
         align-items: center;
+    }
+
+    a
+    {
+        text-decoration: none;
     }
 
     h1
     {
         font-family: $shrikhand;
-        color: black;
+        color: $colour-quinternary;
         font-size: 1.6rem;
         padding: 8px 0 5px 0;
         text-align: center;
     }
 }
-
-
-
-

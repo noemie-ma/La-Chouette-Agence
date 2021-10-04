@@ -1,3 +1,50 @@
+#search
+{
+    background-color: $colour-sexternary;
+    font-family: $roboto;
+    @include flex-row;
+    justify-content: space-evenly;
+    padding: $padding-small;
+    width: 100%;
+
+    input#site-search.input-search
+    {
+        background-color: $colour-sexternary;
+        border: none;
+        font-weight: bold;
+    }
+
+    input:focus
+    {
+        outline: none;
+        border: 1px solid $colour-sexternary;
+    }
+}
+
+#excavate-menus
+{
+    font-family: $roboto;
+    @include flex-column;
+    text-align: center;
+    padding: $padding-small;
+
+    .description
+    {
+        @include flex-column;
+        h2
+        {
+            font-weight: bold;
+        }
+    }
+
+    .button-explore
+    {
+        @include flex-row;
+        justify-content: center;
+    }
+    
+}
+
 .menus_elements img
 {
     object-fit: cover;
