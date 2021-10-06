@@ -56,7 +56,7 @@
         @include flex-row;
         justify-content: center;
         font-weight: bold;
-        color: white;
+        color: $colour-quaternary;
         border-radius: 40px;
         border: none;
         @include shadow-box;
@@ -66,6 +66,88 @@
         cursor: pointer;
     }
     
+}
+
+#tuto
+{
+    padding: 20px 0px;
+
+    .tutoparts
+    {
+      @include flex-column;  
+    }
+
+    .tutoelements
+    {
+        @include flex-column;
+    }
+
+    h2
+    {
+        display: flex;
+        margin-bottom: 1px;
+        margin-top: 10px;
+    }
+
+    ol 
+    {
+        width: 100%;
+        padding: 0px 5px;
+        counter-reset: tutorial;
+        @include flex-column;
+    }
+    
+    li
+    {
+        list-style-type: none;
+        counter-increment: tutorial;
+        margin-bottom: 10px;
+    }
+
+    li:before
+    {
+        content: counter(tutorial);
+        @include plot;
+        margin-left: -10px;
+    }
+
+    .element1
+    {
+    padding: 15px 0px;
+    background-color: #f6f6f6;
+    position: relative;
+    @include shadow-box;
+    margin: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+        i 
+        {
+            margin: 0 10px 0 10px;
+        }
+
+    }
+
+    .element2
+    {
+    padding: 15px 0px;
+    background-color: $light-primary-color;
+    position: relative;
+    @include shadow-box;
+    margin: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+        i 
+        {
+            margin: 0 10px 0 10px;
+            color: $colour-primary;
+        }
+
+    }
+
 }
 
 .menus_elements img

@@ -8,8 +8,12 @@ $colour-quinternary: #000000;
 $colour-sexternary: #EAEAEA;
 $colour-shadow: #CFCFCF;
 
+$light-primary-color: lighten(#9356DC,35%);
+
+$darken-primary-color: darken(#9356DC, 10%);
+
 // Sizes
 
 $padding-small: 1px;
-$padding-medium: 15px;
+$padding-medium: 10px;
 $sizingfont: 20px;
