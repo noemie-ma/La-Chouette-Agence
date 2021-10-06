@@ -9,6 +9,7 @@ a
     text-decoration: none;
 }
 
+/* En-tête des pages */
 header
 {
     @include shadow-box;
@@ -27,6 +28,7 @@ header
         text-align: center;
     }
 
+    /* En tête avec flèche retour */
     #logo > a > .fas
     {
         color: $colour-quinternary;
