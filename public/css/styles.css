@@ -71,6 +71,7 @@ footer #footer-elements ul {
 #underheader {
   font-family: "Roboto", sans-serif;
   font-size: 100%;
+  width: 100%;
 }
 
 /* Recherche localisation de restaurants */
