@@ -13,7 +13,7 @@
   },
   "author": "Noémie",
   "license": "ISC",
-  "browserlist": "last 4 versions",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/noemie-ma/NoemieMallet_3_23092021/issues"
   },
