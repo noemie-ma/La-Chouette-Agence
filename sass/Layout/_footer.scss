@@ -2,17 +2,32 @@ footer
 {
     background-color: #353535;
     color: $colour-quaternary;
-    @include flex-column;
+    width: 100%;
+    padding: 5px;
 
-    h1
+    #footer-elements 
     {
-        font-family: $shrikhand;
-        color: $colour-quaternary;
-    }
+        @include flex-column;
+        gap: 15px;
+        margin-top: 15px;
 
-    ul
-    {
-        list-style-type: none;
-        font-family: $roboto;
+        h1
+        {
+            font-family: $shrikhand;
+            color: $colour-quaternary;
+            font-size: 15px;
+            margin: 0px;
+        }
+
+        ul
+        {
+            list-style-type: none;
+            font-family: $roboto;
+            @include flex-column;
+            padding: 0;
+            margin-bottom: 20px;
+            margin-top: 0;
+            gap: 2px;
+        }
     }
 }
