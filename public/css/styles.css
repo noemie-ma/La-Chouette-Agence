@@ -41,6 +41,16 @@ header .fas {
 footer {
   background-color: #353535;
   color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+footer h1 {
+  font-family: "shrikhand", serif;
+  color: #FFFFFF;
+}
+footer ul {
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Ensemble de la page */
