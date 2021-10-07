@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/styles.css --style expanded",
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   },
   "author": "Noémie",
   "license": "ISC",
-  "browserslist": "last 4 versions",
+  "browserlist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/noemie-ma/NoemieMallet_3_23092021/issues"
   },
