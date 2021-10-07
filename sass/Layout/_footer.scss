@@ -16,7 +16,10 @@ footer
             font-family: $shrikhand;
             color: $colour-quaternary;
             font-size: 15px;
-            margin: 0px;
+            margin-left: 10px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
         }
 
         ul
@@ -27,6 +30,7 @@ footer
             padding: 0;
             margin-bottom: 20px;
             margin-top: 0;
+            margin-left: 10px;
             gap: 2px;
         }
     }
