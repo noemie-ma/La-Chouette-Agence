@@ -159,6 +159,7 @@
 {
     background-color: $colour-sexternary;
     @include flex-column;
+    @include shadow-box;
     padding: $padding-medium;
 
     h2

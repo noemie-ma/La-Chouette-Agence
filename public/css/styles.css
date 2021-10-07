@@ -38,6 +38,11 @@ header .fas {
   top: 28%;
 }
 
+footer {
+  background-color: #353535;
+  color: #FFFFFF;
+}
+
 /* Ensemble de la page */
 #underheader {
   font-family: "Roboto", sans-serif;
@@ -171,6 +176,7 @@ header .fas {
   background-color: #EAEAEA;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 3px 4px #CFCFCF;
   padding: 10px;
 }
 #restaurants h2 {
