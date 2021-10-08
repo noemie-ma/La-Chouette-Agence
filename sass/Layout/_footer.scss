@@ -5,6 +5,12 @@ footer
     width: 100%;
     padding: 5px;
 
+    a
+    {
+        text-decoration: none;
+        color: $colour-quaternary;       
+    }
+
     #footer-elements 
     {
         @include flex-column;
@@ -33,5 +39,36 @@ footer
             margin-left: 10px;
             gap: 2px;
         }
+
+        li > i
+        {
+            margin-right: 5px;
+            font-size: 12px;
+        }
     }
+}
+
+@media all and (min-width: 769px)
+{
+    footer
+    {
+    
+        #footer-elements 
+        {
+            
+    
+            h1
+            {
+                order: 1;
+                text-align: center;
+            }
+    
+            ul
+            {
+                order: 2;
+                @include flex-row;
+                justify-content: space-around;
+            }
+        }
+    }      
 }
