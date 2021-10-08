@@ -242,3 +242,32 @@
     }
 }
 
+@media all and (min-width: 769px)
+{
+
+    #element-pages
+    {
+        display: flex;
+    }
+
+    /* En-tête avec boutons */
+    #excavate-menus
+    {
+        order: 1;
+        width: 50%;
+    }
+
+    /* Partie fonctionnement */
+    #tuto
+    {        
+        order: 2;
+        width: 50%;
+    }
+
+    /* Liste de menus */
+    #restaurants
+    {
+        display: flex;
+    }
+}
+
