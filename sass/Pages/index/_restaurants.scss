@@ -1,0 +1,123 @@
+
+
+
+
+/* Liste de menus */
+#restaurants
+{
+    background-color: $colour-sexternary;
+    @include flex-column;
+    @include shadow-box;
+    padding: $padding-medium;
+
+    h2
+    {
+        display: flex;
+        font-weight: bold;
+    }
+
+    .elements
+    {
+        @include flex-column;
+        gap: 15px;
+    
+    .menus_elements
+    {
+        position: relative;
+        @include flex-column;
+        justify-content: center;
+        width: 100%;
+        border-radius: 20px;
+    
+
+     img
+    {
+        @include flex-column;
+        object-fit: cover;
+        width: 100%;
+        height: 10rem;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+     span
+    {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        background-color: $colour-tertiary;
+        padding: 5px 10px;
+        top: 15px;
+        right: 15px;
+        border-radius: 4px;
+        color: $darken-tiertiary-color;
+    }
+}
+    .pres-menu
+    {
+        background-color: $colour-quaternary;
+        color: $colour-quinternary;
+        margin-top: -2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+        border-radius: 0px 0px 15px 15px;
+    
+
+     .text 
+    {
+        padding: 15px;
+        gap: 5px;
+        @include flex-column;
+    }
+    h3 
+    {
+        font-weight: bold;
+        margin: 0px;
+    }
+
+     p 
+    {
+        margin: 0px;
+    }
+
+    .like
+    {
+        position: relative;
+        width: 15%;
+    }
+}
+}
+
+}
+
+@media all and (min-width: 769px)
+{
+
+    #element-pages
+    {
+        display: flex;
+    }
+
+    /* En-tête avec boutons */
+    #excavate-menus
+    {
+        order: 1;
+        width: 50%;
+    }
+
+    /* Partie fonctionnement */
+    #tuto
+    {        
+        order: 2;
+        width: 50%;
+    }
+
+    /* Liste de menus */
+    .elements
+    {
+        display: flex;
+    }
+}
+

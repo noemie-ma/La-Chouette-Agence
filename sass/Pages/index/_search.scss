@@ -1,0 +1,74 @@
+/* Ensemble de la page */
+#underheader
+{
+    font-family: $roboto;
+    width: 100%;
+}
+
+/* Recherche localisation de restaurants */
+#search
+{
+    background-color: $colour-sexternary;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    color: #4b4b4b;
+
+    .gps-loc
+    {
+        display: flex;
+        margin-left: 70px;
+    }
+
+    input#site-search.input-search
+    {
+        background-color: $colour-sexternary;
+        border: none;
+        font-weight: bold;
+        margin-left: 13px;
+    }
+
+    input:focus
+    {
+        outline: none;
+        border: 1px solid $colour-sexternary;
+    }
+}
+
+
+/* En-tête avec boutons */
+#excavate-menus
+{
+    @include flex-column;
+    text-align: center;
+    padding: $padding-medium;
+    background-color: #f6f6f6;
+    
+    h2
+    {
+        font-weight: bold;
+        font-size: $sizingfont;
+    }
+
+    p
+    {
+        font-size: 17px;
+        margin: 15px 0px 25px 0px;
+    }
+
+    .rechercher
+    {
+        @include flex-row;
+        justify-content: center;
+        font-weight: bold;
+        color: $colour-quaternary;
+        border-radius: 40px;
+        border: none;
+        @include shadow-box;
+        padding: 15px 20px 15px 20px;
+        background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+        margin: 20px 0px 38px 0px;
+        cursor: pointer;
+    }
+    
+}
