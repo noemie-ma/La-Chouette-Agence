@@ -1,0 +1,24 @@
+.moments
+{
+    @include flex-column;
+    gap: 20px;
+    margin-bottom: 30px;
+
+    .mealmoment
+    {
+        position: relative;
+        font-size: 15px;
+
+        p::after
+        {
+            content: '';
+            width: 16%;
+            height: 4px;
+            background-color: $colour-tertiary;
+            position: absolute;
+            z-index: 20;
+            left: 0px;
+            bottom: -8px;
+        }
+    }
+}
