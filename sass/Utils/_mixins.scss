@@ -26,3 +26,9 @@
     margin-left: 10px;
     margin-right: 0px;
 }
+
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
+}
