@@ -28,16 +28,18 @@ gap: 15px;
     .pres-menu
     {
         color: $colour-quinternary;
+        @include flex-column;
+        gap: 5px;
 
             h3
             {
-                font-size: 15px;
+                font-size: 12px;
                 @include ellipsis;
             }
 
             p
             {
-                font-size: 15px;
+                font-size: 10px;
                 margin: 0px;
                 @include ellipsis;
             }
@@ -46,7 +48,12 @@ gap: 15px;
     .price
     {
         color: $colour-quinternary;
-        padding-right: 5px;
-        margin-left: 15px;
+        padding: 10px;
+        text-align: end;
+
+        p
+        {
+            font-size: 12px;
+        }
     }
 }
