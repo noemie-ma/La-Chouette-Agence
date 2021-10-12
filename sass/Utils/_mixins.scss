@@ -32,3 +32,8 @@
     overflow: hidden;
     white-space: nowrap; 
 }
+
+@mixin title {
+    padding: 10px 5px 10px 5px;
+    font-size: 15px;
+}
