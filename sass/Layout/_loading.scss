@@ -1,0 +1,58 @@
+body
+{
+    background-color: $colour-sexternary;
+}
+
+#loader-page
+{
+    position: relative;
+    @include flex-column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 105px;
+
+    .title
+    {
+        margin-top: 40px;
+    }
+
+    h1
+    {
+        font-family: $shrikhand;
+        font-size: 1.6rem;
+    }
+
+    .spin
+    {
+        border: 6px solid $colour-tertiary;
+        position:relative;
+        border-radius: 140px;
+        width: 140px;
+        height: 140px;
+        animation: spin 3s linear infinite;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .spin:after
+    {
+        content:'';
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        bottom: -6px;
+        right: -6px;
+        border-radius: 140px;
+        border: 6px solid transparent;
+        border-top-color: $colour-primary;
+    }
+
+    .wait
+    {
+        font-family: $roboto;
+        text-align: center;
+    }
+}
+
+
+

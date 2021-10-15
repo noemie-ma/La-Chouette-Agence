@@ -37,3 +37,12 @@
     padding: 10px 5px 10px 5px;
     font-size: 15px;
 }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
