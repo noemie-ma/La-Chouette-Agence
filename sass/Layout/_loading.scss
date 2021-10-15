@@ -1,53 +1,39 @@
-body
-{
-    background-color: $colour-sexternary;
-}
-
 #loader-page
 {
-    position: relative;
-    @include flex-column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 105px;
-
-    .title
+    .loader-spin
     {
-        margin-top: 40px;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        @include flex-column;
+        gap: 70px;
+        align-items: center;
+        justify-content: center;
+        background-color: $colour-sexternary;
+        animation: load 0.1s;
+        animation-delay: 2.9s;
+        animation-fill-mode: both;
     }
 
     h1
     {
         font-family: $shrikhand;
         font-size: 1.6rem;
+        margin-top: 40px;
     }
 
     .spin
     {
-        border: 6px solid $colour-tertiary;
-        position:relative;
-        border-radius: 140px;
-        width: 140px;
-        height: 140px;
-        animation: spin 3s linear infinite;
-        display: inline-block;
-        vertical-align: middle;
+        border: 5px solid $colour-tertiary;
+        border-top: 5px solid $colour-primary;
+        border-radius: 70px;
+        width: 70px;
+        height: 70px;
+        animation: spin 1s ease-in-out;
+        animation-iteration-count: 3;
     }
 
-    .spin:after
-    {
-        content:'';
-        position: absolute;
-        top: -6px;
-        left: -6px;
-        bottom: -6px;
-        right: -6px;
-        border-radius: 140px;
-        border: 6px solid transparent;
-        border-top-color: $colour-primary;
-    }
-
-    .wait
+    p
     {
         font-family: $roboto;
         text-align: center;
