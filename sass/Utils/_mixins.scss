@@ -38,14 +38,19 @@
     font-size: 15px;
 }
 
-@keyframes spin {
-    from {
+
+@keyframes spin 
+{
+    from
+    {
         transform: rotate(0deg);
     }
-    to {
+    to 
+    {
         transform: rotate(360deg);
     }
 }
+
 
 @keyframes load
 {

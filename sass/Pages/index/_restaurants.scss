@@ -91,6 +91,10 @@
 @media all and (min-width: 769px)
 {
 
+    #restaurants h2
+    {
+        align-self: center;
+    }
     #element-pages
     {
         display: flex;
@@ -113,10 +117,8 @@
     /* Liste de menus */
     .elements
     {
-        @include flex-row;
-        gap: 15px;
-        width: 100%;
-
+        width: 75%;
+        align-self: center;
     }
 }
 
