@@ -72,16 +72,3 @@
        z-index: -1;
     }
 }
-
-@keyframes heartfull
-{
-    from
-    {
-        background: $colour-primary;
-    }
-
-    to 
-    {
-        background: $colour-secondary;
-    }
-}

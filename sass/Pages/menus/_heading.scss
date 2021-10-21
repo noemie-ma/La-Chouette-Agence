@@ -20,36 +20,19 @@ width: 100%;
             font-size: 25px;
         }
 
-        .like
+        .fa-heart
         {
             font-size: 20px;
             margin-top: 6px;
             cursor: pointer;
-
-            i
-            {
-                animation-duration: 2s;
-                animation-name: heartfull;
-                animation-iteration-count: 1;
-                animation-direction:normal;
-                
-                /* i:hover
-                {
-                    content: "";
-                    fill: $colour-secondary;
-                    stroke: $colour-primary;
-                }
-
-                i:after
-                {
-                    content: "";
-                    fill: $colour-primary;
-                    stroke: $colour-primary;
-                    opacity: 1;
-                    position: absolute;
-                } */
-
-            }
+        }
+        .fa-heart:hover
+        {
+            background: linear-gradient($colour-secondary, $colour-primary);
+            background-clip: text;
+            color: transparent;
+            transition: all 0.8s linear;
+            font-weight: bold;
         }
     }
 }
