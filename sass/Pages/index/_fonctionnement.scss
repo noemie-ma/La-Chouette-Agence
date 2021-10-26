@@ -46,39 +46,28 @@
 
     .element1
     {
-    padding: 15px 0px;
-    background-color: #f6f6f6;
-    position: relative;
-    @include shadow-box;
-    margin: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
+        padding: 15px 0px;
+        background-color: #f6f6f6;
+        position: relative;
+        @include shadow-box;
+        margin: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
 
         i 
         {
             margin: 0 10px 0 10px;
         }
-
-    }
-
-    .element2
-    {
-    padding: 15px 0px;
-    background-color: $light-primary-color;
-    position: relative;
-    @include shadow-box;
-    margin: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-
-        i 
+        &:hover
         {
-            margin: 0 10px 0 10px;
-            color: $colour-primary;
-        }
+            background-color: $light-primary-color;
 
+            i 
+            {
+                color: $colour-primary;
+            }
+        }
     }
 
 }

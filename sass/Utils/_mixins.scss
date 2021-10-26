@@ -28,9 +28,10 @@
 }
 
 @mixin ellipsis {
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap; 
+    max-width: 100%;
 }
 
 @mixin title {

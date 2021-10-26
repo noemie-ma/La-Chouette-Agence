@@ -15,6 +15,49 @@ gap: 15px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+
+    &:hover .checking
+    {
+        position: relative;
+        background-color: $colour-tertiary;
+        width: 30%;
+        opacity: 1;
+        visibility: visible;
+        border-radius: 0 15px 15px  0;
+        height: 100%;
+        z-index:1;
+
+        i
+        {
+            font-size: 30px;
+            color: white;
+            transform: rotate(180deg);
+            animation: rotate 0.5s both;
+        }
+    }
+
+    .checking
+    {
+        background-color: $colour-tertiary;
+        display: flex;
+        justify-content:center;
+        width: 0%;                
+        border-radius: 0 15px 15px  0;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.8s;
+        z-index:1;
+
+        i
+        {
+            padding: 15px;
+            font-size: 30px;
+            color: white;
+        }
+    }
 }
 .menu-prop
 {
@@ -23,7 +66,6 @@ gap: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include ellipsis;
 
     .pres-menu
     {
@@ -34,15 +76,18 @@ gap: 15px;
             h3
             {
                 font-size: 12px;
-                @include ellipsis;
             }
 
             p
             {
                 font-size: 10px;
                 margin: 0px;
-                @include ellipsis;
             }
+    }
+
+    .pres-menu > *
+    {
+        @include ellipsis;
     }
 
     .price
