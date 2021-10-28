@@ -85,6 +85,14 @@ gap: 15px;
             }
     }
 
+    .animation
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     .pres-menu > *
     {
         @include ellipsis;
