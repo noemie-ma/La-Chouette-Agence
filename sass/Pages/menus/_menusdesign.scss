@@ -15,99 +15,91 @@ gap: 15px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    display: flex;
-    flex-direction: row-reverse;
+    @include flex-row;
 
-    &:hover .checking
-    {
-        position: absolute;
-        background-color: $colour-tertiary;
-        width: 30%;
-        opacity: 1;
-        visibility: visible;
-        border-radius: 0px 15px 15px  0px;
-        height: 100%;
-        z-index:1;
-
-        i
+        .menu-prop
         {
-            font-size: 30px;
-            color: $colour-quaternary;
+            padding: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100%;
+            overflow: hidden;
+
+            .pres-menu
+            {
+                color: $colour-quinternary;
+                @include flex-column;
+                gap: 5px;
+                overflow: hidden;
+
+                    h3
+                    {
+                        font-size: 12px;
+                    }
+
+                    p
+                    {
+                        font-size: 10px;
+                        margin: 0px;
+                    }
+            }
+
+            .pres-menu > *
+            {
+                @include ellipsis;
+            }
+
+            .price
+            {
+                display: flex;
+                color: $colour-quinternary;
+                align-items: flex-end;
+                margin-bottom: 1rem;
+                margin-right: 1rem;
+                margin-top: 1rem;
+                max-width: 100%;
+                margin-left: 0.5rem;
+
+                p
+                {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .checking
+        {
+            width: 7rem;
+            background: $colour-tertiary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -7rem;
+            transition-duration: 1.0s;
+            transition-timing-function: ease;
+        }
+
+        &:hover .checking
+        {
+            margin-right: 0px;
+            transition-duration: 1.0s;
+            transition-timing-function: ease;
+        }
+
+        &:hover i
+        {
             transform: rotate(360deg);
-            animation: rotate 1.2s both;
+            transition-duration: 1.0s;
         }
-    }
 
-    .checking
-    {
-        background-color: $colour-tertiary;
-        display: flex;
-        justify-content:center;
-        width: 0%;                
-        border-radius: 0px 15px 15px  0px;
-        height: 100%;
-        opacity: 0;
-        visibility: hidden;
-        transition: 1.5s;
-        z-index:1;
-
-        i
+        .checking > i
         {
-            padding: 15px;
-            font-size: 30px;
-            color: $colour-quaternary;
-        }
-    }
-}
-.menu-prop
-{
-    padding: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .pres-menu
-    {
-        color: $colour-quinternary;
-        @include flex-column;
-        gap: 5px;
-
-            h3
-            {
-                font-size: 12px;
-            }
-
-            p
-            {
-                font-size: 10px;
-                margin: 0px;
-            }
-    }
-
-    .animation
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .pres-menu > *
-    {
-        @include ellipsis;
-    }
-
-    .price
-    {
-        color: $colour-quinternary;
-        padding: 10px;
-        text-align: end;
-        display: flex;
-
-        p
-        {
-            font-size: 12px;
-        }
-    }
+            color: $colour-tertiary;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background: $colour-quaternary;
+            transition-duration: 1.0s;
+       }
 }
