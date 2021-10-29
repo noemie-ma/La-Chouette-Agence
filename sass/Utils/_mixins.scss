@@ -38,3 +38,20 @@
     padding: 10px 5px 10px 5px;
     font-size: 15px;
 }
+
+@mixin animeheart {
+    .fa-heart
+        {
+            font-size: 20px;
+            margin-top: 6px;
+            cursor: pointer;
+        }
+        .fa-heart:hover
+        {
+            background: linear-gradient($colour-secondary, $colour-primary);
+            background-clip: text;
+            color: transparent;
+            transition: all 0.8s linear;
+            font-weight: bold;
+        }
+}

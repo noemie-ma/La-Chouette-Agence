@@ -13,26 +13,12 @@ width: 100%;
         @include flex-row;
         justify-content: space-between;
         margin: 25px 0px 25px 0px;
+        @include animeheart;
 
         h1
         {
             font-family: $shrikhand;
             font-size: 25px;
-        }
-
-        .fa-heart
-        {
-            font-size: 20px;
-            margin-top: 6px;
-            cursor: pointer;
-        }
-        .fa-heart:hover
-        {
-            background: linear-gradient($colour-secondary, $colour-primary);
-            background-clip: text;
-            color: transparent;
-            transition: all 0.8s linear;
-            font-weight: bold;
         }
     }
 }
