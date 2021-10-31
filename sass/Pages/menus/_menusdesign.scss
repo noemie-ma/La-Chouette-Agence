@@ -74,12 +74,12 @@ gap: 15px;
 
         .checking
         {
-            width: 7rem;
+            width: 30%;
             background: $colour-tertiary;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-right: -7rem;
+            margin-right: -30%;
             transition-duration: 1.0s;
             transition-timing-function: ease;
         }

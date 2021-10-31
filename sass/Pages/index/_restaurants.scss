@@ -81,7 +81,7 @@
         .like
         {
             position: relative;
-            width: 15%;
+            width: 10%;
             @include animeheart;
         }
     }
@@ -96,6 +96,7 @@
     {
         align-self: center;
     }
+
     #element-pages
     {
         display: flex;
@@ -120,6 +121,11 @@
     {
         width: 75%;
         align-self: center;
+    }
+        
+    .fa-heart
+    {
+        margin-left: 75px;
     }
 }
 

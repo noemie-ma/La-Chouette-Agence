@@ -58,17 +58,6 @@
 
     .rechercher
     {
-        @include flex-row;
-        justify-content: center;
-        font-weight: bold;
-        color: $colour-quaternary;
-        border-radius: 40px;
-        border: none;
-        @include shadow-box;
-        padding: 15px 20px 15px 20px;
-        background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
-        margin: 20px 0px 38px 0px;
-        cursor: pointer;
+        @include bouton;
     }
-    
 }
