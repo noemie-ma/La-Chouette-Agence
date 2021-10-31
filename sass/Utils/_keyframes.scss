@@ -32,17 +32,32 @@
     }
 }
 
+@keyframes testSlide 
+{
+    from
+    {
+      margin-left: 0%;
+      width: 0%;
+    }
+
+    to
+    {
+      margin-left: 100%;
+      width: 100%;
+    }
+}
+
 @keyframes shadowbutton
 {
 	
     from
     {
-	    box-shadow: 0px 3px 4px $colour-shadow;
+	    box-shadow: 3px 3px 3px 3px $colour-shadow;
 	}
 	
     to
     {
-	    box-shadow: 5px 10px 15px $colour-quinternary;
+	    box-shadow: 5px 5px 5px 5px $colour-shadow;
 	}
 	
 }

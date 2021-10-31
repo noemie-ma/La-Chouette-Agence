@@ -16,6 +16,9 @@ gap: 15px;
     overflow: hidden;
     cursor: pointer;
     @include flex-row;
+    animation-duration: 3s;
+    animation: testSlide 1.0s;
+    animation-delay: 2.9s;
 
         .menu-prop
         {
