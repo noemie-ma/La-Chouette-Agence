@@ -61,3 +61,21 @@
 	}
 	
 }
+
+@keyframes hearts
+{
+    0%
+    {
+        height: 10%;
+    }
+
+    50%
+    {
+        height: 60%;
+    }
+
+    100%
+    {
+        height: 100%;
+    }
+}

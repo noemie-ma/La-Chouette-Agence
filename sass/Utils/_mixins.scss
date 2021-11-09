@@ -51,8 +51,9 @@
             background: linear-gradient($colour-secondary, $colour-primary);
             background-clip: text;
             color: transparent;
-            transition: all 2.0s cubic-bezier(.17,.67,.83,.67);
             font-weight: bold;
+            animation-duration: 3.0s;
+            animation: hearts 3.0s;
         }
 }
 
