@@ -36,14 +36,14 @@
 {
     from
     {
-      margin-left: 0%;
       width: 0%;
+      transition-timing-function: cubic-bezier(.17,.67,.83,.67);
     }
 
     to
     {
-      margin-left: 100%;
       width: 100%;
+      transition-timing-function: cubic-bezier(.17,.67,.83,.67);
     }
 }
 
